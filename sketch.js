@@ -35,14 +35,15 @@ function setup() {
   jungle.scale=0.3
   jungle.x = width /2;
 
-  kangaroo = createSprite(50,200,20,50);
+  //create the sprite
+  
   kangaroo.addAnimation("running", kangaroo_running);
   kangaroo.addAnimation("collided", kangaroo_collided);
-  kangaroo.scale = 0.15;
-  kangaroo.setCollider("circle",0,0,300)
+ //scale n setcollider
+  
+  
+//make invisible ground
 
-  invisibleGround = createSprite(400,350,1600,10);
-  invisibleGround.visible = false;
   
   shrubsGroup = new Group();
   obstaclesGroup = new Group();
@@ -111,10 +112,10 @@ function spawnShrubs() {
   //write code here to spawn the clouds
   if (frameCount % 150 === 0) {
 
-    var shrub = createSprite(camera.position.x+500,330,40,10);
 
-    shrub.velocityX = -(6 + 3*score/100)
-    shrub.scale = 0.6;
+    //shrub here
+    
+   
 
     var rand = Math.round(random(1,3));
     switch(rand) {
